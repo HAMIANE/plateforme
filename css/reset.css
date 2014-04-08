@@ -1,0 +1,114 @@
+a, abbr, acronym, address, applet, article, aside, audio,
+b, blockquote, big, body,
+center, canvas, caption, cite, code, command,
+datalist, dd, del, details, dfn, dl, div, dt, 
+em, embed,
+fieldset, figcaption, figure, font, footer, form, 
+h1, h2, h3, h4, h5, h6, header, hgroup, html,
+i, iframe, img, ins,
+kbd, 
+keygen,
+label, legend, li, 
+meter,
+nav,
+object, ol, output,
+p, pre, progress,
+q, 
+s, samp, section, small, span, source, strike, strong, sub, sup,
+table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, 
+var{
+	background: transparent;
+	border: 0 none;
+	/* [disabled]font-size: 100%; */
+	margin: 0px;
+	padding: 0;
+	outline: 0;
+	vertical-align: top;
+	font-size-adjust: 10 px;
+	border-top-width: 0;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-left-width: 0;
+	border-top-color: #000;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+table, table td {
+	padding: 0;
+	border: none;
+	/* [disabled]border-collapse:collapse; */
+}
+img {
+	vertical-align:top; 
+}
+embed { 
+	vertical-align:top;
+}#content .bottom .container .clearfix .grid6 #contacts-form fieldset .grid3.first label {
+	color: #FFF;
+}
+#content .bottom .container .clearfix .grid6 #contacts-form fieldset .grid3 {
+	color: #FFF;
+}
+#content .bottom .container .clearfix .grid3.first .wrapper .address dd {
+	color: #FFF;
+}
+#content .top .container .wrapper .grid3.first .categories li a {
+	color: #000;
+}
+#content .top .container .wrapper .grid9 h2 {
+	color: #0080FF;
+}
+#content .top .container .wrapper .grid9 .connect tr td strong em {
+	color: #000;
+}
+#content .top .container .wrapper .grid9 .connect tr td div strong em {
+	color: #FF8040;
+}
+#content .top .container .clearfix .container .clearfix .grid3.first .list3 li a {
+	color: #0080FF;
+}
+#content .top .container .wrapper .container .wrapper center #formulaire table tr td {
+	color: #00F;
+}
+#content .top .container .wrapper .container .wrapper center #formulaire .formulaire tr td {
+	color: #FFF;
+}
+#content .top .container .wrapper .container .wrapper center #formulaire .formulaire tr td {
+	color: #FF80FF;
+}
+#content .top .container .wrapper .container .wrapper center #formulaire .formulaire tr td {
+	color: #FFF;
+}
+#content .top .container .wrapper .container .wrapper center #formulaire .formulaire tr td {
+	color: #0080C0;
+}
+#content .top .container .wrapper .container .wrapper center #formulaire .formulaire tr td {
+	color: #0080FF;
+}
+#content .top .container .wrapper .container .wrapper center center form table tr td {
+	color: #0080FF;
+}
+#content .top .container .wrapper .container .wrapper center form table tr td {
+	color: #0080C0;
+}
+#content .top .container .wrapper #switchcategory .container .clearfix .grid3.first .list3 li a {
+	color: #0080C0;
+}
+#content .top .container .wrapper .container .wrapper center #formulaire .formulaire tr td {
+	color: #C0C0C0;
+}
+#content .top .container .wrapper .container .wrapper center #formulaire .formulaire tr td {
+	color: #82C0FF;
+}
+#content .bottom .wrapper .copy div {
+	color: #FFF;
+}
+.container .wrapper strong strong {
+	color: #FFF;
+}

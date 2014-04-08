@@ -1,0 +1,243 @@
+.container {
+	width: 1000px;
+	position: relative;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+}
+.grid1, .grid2, .grid3, .grid4, .grid5, .grid6, .grid7, .grid8, .grid9, .grid10, .grid11 {
+	float: left;
+	margin-left: 30px;
+}
+.grid1 {
+	width: 54px;
+}
+.grid2 {
+	width: 138px;
+}
+.grid3 {
+	width: 222px;
+}
+.grid4 {
+	width: 306px;
+}
+.grid5 {
+	width: 390px;
+}
+.grid6 {
+	width: 474px;
+}
+.grid7 {
+	width: 558px;
+}
+.grid8 {
+	width: 642px;
+}
+.grid9 {
+	width: 726px;
+}
+.grid10 {
+	width: 810px;
+}
+.grid11 {
+	width: 894px;
+}
+.first {
+	margin-left: 0;
+	clear: left;
+}
+
+
+/* Clear Floated Elements
+----------------------------------------------------------------------------------------------------*/
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+#login{
+	top:80px;
+	left:400px;
+	width:120px;
+	position:absolute;
+	
+}
+#login1{
+	top: 151px;
+	left: 551px;
+	width: 120px;
+	position: absolute;
+	
+}
+#pass{
+	top:110px;
+	left:400px;
+	width:120px;
+	position:absolute;}
+#pass1{
+	top:110px;
+	left:500px;
+	width:120px;
+	position:absolute;
+	
+	
+}
+
+
+	
+/*	.button {background:url(../images/button1_bg.gif) top repeat-x;display:inline-block;font-size:20px;color:#363636;line-height:34px;text-decoration:none}
+.button span {display:block;background:url(../images/button1_left.gif) top left no-repeat}
+.button span span {padding:0 40px;background:url(../images/button1_right.gif) top right no-repeat;height:39px}
+.button:hover {color:#006abb} 
+	
+	#ContactForm {margin-top:-4px;line-height:26px}
+#ContactForm strong {float:left;width:70px;font-weight:normal}
+#ContactForm .wrapper {min-height:30px}
+#ContactForm .bg {background:url(../images/input2.gif) no-repeat;float:left}
+#ContactForm .textarea_box {min-height:260px}
+#ContactForm .textarea_box .bg {background:url(../images/textarea.gif) no-repeat;float:left}
+#ContactForm a span span {padding:0}
+#ContactForm a {margin-right:20px;float:right;width:110px;text-align:center}
+#ContactForm .input {width:277px;height:17px;background:none;padding:6px 10px;color:#000;font:14px Arial, Helvetica, sans-serif}
+#ContactForm textarea {overflow:auto;width:464px;height:228px;background:none;padding:6px 10px;color:#000;font:14px Arial, Helvetica, sans-serif;margin:0}
+#sign_up {width:100%;height:29px;overflow:hidden;padding-top:7px}
+#sign_up .input {float:left;background:url(../images/input.gif) no-repeat;width:120px;height:17px;padding:6px 10px;font:14px Arial, Helvetica, sans-serif;color:#000;margin-right:7px}
+#sign_up a {font-size:16px;float:left;background:url(../images/sign_up.gif) no-repeat;width:77px;text-align:center;line-height:24px;height:29px;color:#363636;text-decoration:none}
+#sign_up a:hover {color:#006abb}
+#sign_up{}*/
+.liste {
+	margin:0px;
+	padding:0px;
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+.liste th{
+	background-image:url(../images/fond_mdp.jpg);
+	color:#000;
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+
+.liste th:first-child{
+	-moz-border-radius-topleft: 20px ;
+    -webkit-border-top-left-radius: 20px ;
+	border-top-left-radius: 20px;
+}
+
+.liste th:last-child{
+	-moz-border-radius-topright: 15px ;
+    -webkit-border-top-right-radius: 15px ;
+	border-top-right-radius: 15px;
+}
+
+.liste tr{
+	padding:0px;
+	margin:0px;
+	border:0px;
+}
+.liste tr.trListe{
+	
+	background-color:#aaa;
+	color:#FFF;
+	-moz-text-shadow: 2px 2px 2px black;
+	-webkit-text-shadow: 2px 2px 2px black;
+	text-shadow: 2px 2px 2px black;
+}
+.liste tr.trListe:hover{
+	background-image:url(../images/fond_mdp.jpg);
+	color:black;
+}
+
+.liste tr.trListe td{
+	padding:0px 2px;
+	margin:0px;
+	border:0px;
+}
+		
+input, textarea, select{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:360px;
+}
+
+input[type=submit],button{
+	-moz-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	color:#ffffff;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #528ecc;
+	width:170px;
+	margin:18px;
+}
+
+input[type=file]{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:360px;
+}
+input[type=checkbox]{
+	margin:5px;
+	padding:0;
+	border:none;
+	width:60px;
+}
+input[type=submit]:hover,button:hover {
+	background-color:#378de5;
+}
+input[type=submit]:active,button:active{
+	position:relative;
+	top:1px;
+}
+
+tr.erreur{
+	background-color:#f00;
+	color:#fff;
+}
+
+tr.message{
+	background-color:#00f;
+	color:#fff;
+}	

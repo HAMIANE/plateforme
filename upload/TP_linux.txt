@@ -1,0 +1,265 @@
+guest-isSk6L@ubuntu:~$ cd
+guest-isSk6L@ubuntu:~$ cd ..
+guest-isSk6L@ubuntu:/tmp$ cd 
+guest-isSk6L@ubuntu:~$ mkdir repA
+guest-isSk6L@ubuntu:~$ cd repA
+guest-isSk6L@ubuntu:~/repA$ mkdir repB repC repD repE
+guest-isSk6L@ubuntu:~/repA$ cd repC
+guest-isSk6L@ubuntu:~/repA/repC$ mkdir repG repH
+guest-isSk6L@ubuntu:~/repA/repC$ repG repH repF
+No command 'repG' found, did you mean:
+ Command 'repl' from package 'nmh' (universe)
+ Command 'repl' from package 'mailutils-mh' (universe)
+ Command 'rep' from package 'rep' (universe)
+repG: command not found
+guest-isSk6L@ubuntu:~/repA/repC$ mkdir  repG repH repF
+mkdir: cannot create directory `repG': File exists
+mkdir: cannot create directory `repH': File exists
+guest-isSk6L@ubuntu:~/repA/repC$ cd ../repE
+guest-isSk6L@ubuntu:~/repA/repE$ mkdir repI repJ
+guest-isSk6L@ubuntu:~/repA/repE$ cd ../repA
+bash: cd: ../repA: No such file or directory
+guest-isSk6L@ubuntu:~/repA/repE$ dc repA
+dc: Could not open file repA
+guest-isSk6L@ubuntu:~/repA/repE$ ~cd/repA
+bash: ~cd/repA: No such file or directory
+guest-isSk6L@ubuntu:~/repA/repE$ cd ~/repA
+guest-isSk6L@ubuntu:~/repA$ ls -R
+.:
+repB  repC  repD  repE
+
+./repB:
+
+./repC:
+repF  repG  repH
+
+./repC/repF:
+
+./repC/repG:
+
+./repC/repH:
+
+./repD:
+
+./repE:
+repI  repJ
+
+./repE/repI:
+
+./repE/repJ:
+guest-isSk6L@ubuntu:~/repA$ touch contenu-repA
+guest-isSk6L@ubuntu:~/repA$ ls -l > contenu-repA
+guest-isSk6L@ubuntu:~/repA$ cat contenu-repA
+total 0
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L   0 Nov 27 03:10 contenu-repA
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 02:58 repB
+drwxrwxr-x 5 guest-isSk6L guest-isSk6L 100 Nov 27 03:04 repC
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 02:58 repD
+drwxrwxr-x 4 guest-isSk6L guest-isSk6L  80 Nov 27 03:07 repE
+guest-isSk6L@ubuntu:~/repA$ cd repC
+guest-isSk6L@ubuntu:~/repA/repC$ ls -l >> contenu-repC
+guest-isSk6L@ubuntu:~/repA/repC$ cat conetnu-repC
+cat: conetnu-repC: No such file or directory
+guest-isSk6L@ubuntu:~/repA/repC$ touch contenu-repC
+guest-isSk6L@ubuntu:~/repA/repC$ ls -l > contenu-repC
+guest-isSk6L@ubuntu:~/repA/repC$ cat conteu-repC
+cat: conteu-repC: No such file or directory
+guest-isSk6L@ubuntu:~/repA/repC$ cat contenu-repC
+total 0
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L  0 Nov 27 03:12 contenu-repC
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:04 repF
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:00 repG
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:00 repH
+guest-isSk6L@ubuntu:~/repA/repC$ cd ../repE
+guest-isSk6L@ubuntu:~/repA/repE$ touch contenu-repE
+guest-isSk6L@ubuntu:~/repA/repE$ ls -l > contenu-repE
+guest-isSk6L@ubuntu:~/repA/repE$ cat contenu-repE
+total 0
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L  0 Nov 27 03:14 contenu-repE
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:07 repI
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:07 repJ
+guest-isSk6L@ubuntu:~/repA/repE$ cd ~/repA
+guest-isSk6L@ubuntu:~/repA$ cat contenu-repA repC/contenu-repC repE/contenu-repEtotal 0
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L   0 Nov 27 03:10 contenu-repA
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 02:58 repB
+drwxrwxr-x 5 guest-isSk6L guest-isSk6L 100 Nov 27 03:04 repC
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 02:58 repD
+drwxrwxr-x 4 guest-isSk6L guest-isSk6L  80 Nov 27 03:07 repE
+total 0
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L  0 Nov 27 03:12 contenu-repC
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:04 repF
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:00 repG
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:00 repH
+total 0
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L  0 Nov 27 03:14 contenu-repE
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:07 repI
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 40 Nov 27 03:07 repJ
+guest-isSk6L@ubuntu:~/repA$ cd repB
+guest-isSk6L@ubuntu:~/repA/repB$ touch fichier1
+guest-isSk6L@ubuntu:~/repA/repB$ vi fichier1
+guest-isSk6L@ubuntu:~/repA/repB$ cat fichier1
+contient :
+contenu fich1
+ces fichiers
+guest-isSk6L@ubuntu:~/repA/repB$ echo conetnu fich2 > fichier2
+guest-isSk6L@ubuntu:~/repA/repB$ echo ne contient > fichier2
+guest-isSk6L@ubuntu:~/repA/repB$ echo conetnu fich2 > fichier2
+guest-isSk6L@ubuntu:~/repA/repB$ echo ne contient >> fichier2
+guest-isSk6L@ubuntu:~/repA/repB$ cat fichier2
+conetnu fich2
+ne contient
+guest-isSk6L@ubuntu:~/repA/repB$ cat fichier2 | sed -e"s/2/3/g" | sed -e"s/ne contient/rien dinteressant/g" > fichier3
+guest-isSk6L@ubuntu:~/repA/repB$ cat fichier3
+conetnu fich3
+rien dinteressant
+guest-isSk6L@ubuntu:~/repA/repB$ grep contenu fichier1 fichier2 fichier3
+fichier1:contenu fich1
+guest-isSk6L@ubuntu:~/repA/repB$ grep -v contenu fichier1 fichier2 fichier3
+fichier1:contient :
+fichier1:ces fichiers
+fichier2:conetnu fich2
+fichier2:ne contient
+fichier3:conetnu fich3
+fichier3:rien dinteressant
+guest-isSk6L@ubuntu:~/repA/repB$ cd ../repD
+guest-isSk6L@ubuntu:~/repA/repD$ echo contenu text 1 > text1
+guest-isSk6L@ubuntu:~/repA/repD$ echo en esperant que >> text1
+guest-isSk6L@ubuntu:~/repA/repD$  cat text1
+contenu text 1
+en esperant que
+guest-isSk6L@ubuntu:~/repA/repD$ echo contenu text2 > text2
+guest-isSk6L@ubuntu:~/repA/repD$ echo vous aurez >> text2
+guest-isSk6L@ubuntu:~/repA/repD$ cat text2
+contenu text2
+vous aurez
+guest-isSk6L@ubuntu:~/repA/repD$ echo contenu text3 > text3
+guest-isSk6L@ubuntu:~/repA/repD$ echo bien compris le principe >> text3
+guest-isSk6L@ubuntu:~/repA/repD$ cat text3
+contenu text3
+bien compris le principe
+guest-isSk6L@ubuntu:~/repA/repD$ grep -v contenu text1 text2 text3
+text1:en esperant que
+text2:vous aurez
+text3:bien compris le principe
+guest-isSk6L@ubuntu:~/repA/repD$ grep -v contenu text1 text2 text3 > res-grep-text
+guest-isSk6L@ubuntu:~/repA/repD$ cat res-grep-text
+text1:en esperant que
+text2:vous aurez
+text3:bien compris le principe
+guest-isSk6L@ubuntu:~/repA/repD$ cat res-grep-text | sed -e "s/text[0-9]//g"
+:en esperant que
+:vous aurez
+:bien compris le principe
+guest-isSk6L@ubuntu:~/repA/repD$ cat res-grep-text | sed -e "s/text[0-9]//g" > res-cut-text 
+guest-isSk6L@ubuntu:~/repA/repD$ cat res-cut-text
+:en esperant que
+:vous aurez
+:bien compris le principe
+guest-isSk6L@ubuntu:~/repA/repD$ cd ~/repA
+guest-isSk6L@ubuntu:~/repA$ ls -R -P > new-contenu-rep
+ls: invalid option -- 'P'
+Try `ls --help' for more information.
+guest-isSk6L@ubuntu:~/repA$ ls -R -l > new-contenu-rep
+guest-isSk6L@ubuntu:~/repA$ cat new-contenu-rep
+.:
+total 4
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 321 Nov 27 03:10 contenu-repA
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L   0 Nov 27 03:48 new-contenu-rep
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 100 Nov 27 03:29 repB
+drwxrwxr-x 5 guest-isSk6L guest-isSk6L 120 Nov 27 03:11 repC
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 140 Nov 27 03:46 repD
+drwxrwxr-x 4 guest-isSk6L guest-isSk6L 100 Nov 27 03:14 repE
+
+./repB:
+total 12
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 38 Nov 27 03:24 fichier1
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 26 Nov 27 03:27 fichier2
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 32 Nov 27 03:29 fichier3
+
+./repC:
+total 4
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 256 Nov 27 03:12 contenu-repC
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:04 repF
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:00 repG
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:00 repH
+
+./repC/repF:
+total 0
+
+./repC/repG:
+total 0
+
+./repC/repH:
+total 0
+
+./repD:
+total 20
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 55 Nov 27 03:46 res-cut-text
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 70 Nov 27 03:42 res-grep-text
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 31 Nov 27 03:37 text1
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 25 Nov 27 03:39 text2
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 39 Nov 27 03:39 text3
+
+./repE:
+total 4
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 196 Nov 27 03:14 contenu-repE
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:07 repI
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:07 repJ
+
+./repE/repI:
+total 0
+
+./repE/repJ:
+total 0
+guest-isSk6L@ubuntu:~/repA$ grep "^d" new-contenu-rep 
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 100 Nov 27 03:29 repB
+drwxrwxr-x 5 guest-isSk6L guest-isSk6L 120 Nov 27 03:11 repC
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L 140 Nov 27 03:46 repD
+drwxrwxr-x 4 guest-isSk6L guest-isSk6L 100 Nov 27 03:14 repE
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:04 repF
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:00 repG
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:00 repH
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:07 repI
+drwxrwxr-x 2 guest-isSk6L guest-isSk6L  40 Nov 27 03:07 repJ
+guest-isSk6L@ubuntu:~/repA$ grep "^-" new-contenu-rep 
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 321 Nov 27 03:10 contenu-repA
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L   0 Nov 27 03:48 new-contenu-rep
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 38 Nov 27 03:24 fichier1
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 26 Nov 27 03:27 fichier2
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 32 Nov 27 03:29 fichier3
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 256 Nov 27 03:12 contenu-repC
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 55 Nov 27 03:46 res-cut-text
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 70 Nov 27 03:42 res-grep-text
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 31 Nov 27 03:37 text1
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 25 Nov 27 03:39 text2
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 39 Nov 27 03:39 text3
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 196 Nov 27 03:14 contenu-repE
+guest-isSk6L@ubuntu:~/repA$ grep "^-" new-contenu-rep >temp
+guest-isSk6L@ubuntu:~/repA$ cat temp
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 321 Nov 27 03:10 contenu-repA
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L   0 Nov 27 03:48 new-contenu-rep
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 38 Nov 27 03:24 fichier1
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 26 Nov 27 03:27 fichier2
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 32 Nov 27 03:29 fichier3
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 256 Nov 27 03:12 contenu-repC
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 55 Nov 27 03:46 res-cut-text
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 70 Nov 27 03:42 res-grep-text
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 31 Nov 27 03:37 text1
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 25 Nov 27 03:39 text2
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 39 Nov 27 03:39 text3
+-rw-rw-r-- 1 guest-isSk6L guest-isSk6L 196 Nov 27 03:14 contenu-repE
+**********
+16--sort -k5 -n -r temp.
+*****
+17--~/repA$ sort -k5 -rn temp | head -1 | cut -f5,10 -d " "
+***************
+18--
+****
+19--- rm -r 
+*********
+20--cp -R repA repALL
+guest-Pqhb7R@ubuntu:~/repA$ find -name repJ -print
+./repE/repJ
+
+21-- cd ~
+cp -R repA repALL
